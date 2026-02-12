@@ -10,17 +10,17 @@ students = {
 
 def grade(name,marks):
         if marks<0 or marks>100:
-            return f"{name}-> Invalid Marks Range"
+            return f"{name}--> Invalid Marks Range"
         elif marks>=80:
-            return f"{name}-> A"
+            return f"{name}--> A"
         elif marks>=60:
-            return f"{name}-> B"
+            return f"{name}--> B"
         elif marks>=50:
-            return f"{name}-> C"
+            return f"{name}--> C"
         elif marks>=40:
-            return f"{name}-> D"
+            return f"{name}--> D"
         else:
-            return f"{name}-> F"
+            return f"{name}--> F"
 
 for name,marks in students.items():
     print(grade(name,marks))
